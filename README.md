@@ -7,7 +7,7 @@ Run a function when node becomes leader. Run another one (if required) when it d
 In leiningen:
 
 ```
-[leader-guarantee "0.1.0-SNAPSHOT"]
+[leader-guarantee "0.1.0"]
 ```
 
 In Maven:
@@ -16,7 +16,7 @@ In Maven:
 <dependency>
   <groupId>leader-guarantee</groupId>
   <artifactId>leader-guarantee</artifactId>
-  <version>0.1.0-SNAPSHOT</version>
+  <version>0.1.0</version>
 </dependency>
 ```
 
@@ -47,6 +47,16 @@ Leader-gurantee (LG) is just a simple wrapper around [JGroups'](http://jgroups.o
 
 + LG uses UDP as its transport protocol - it uses the default UDP config, plus:
 + LG uses a Central controlled lock - see [CENTRAL_LOCK](http://www.jgroups.org/javadoc/org/jgroups/protocols/CENTRAL_LOCK.html)
+
+## Help!
+
+### I get a "SEVERE: JGRP000029" with a IPv6 destination address error consistently in my logs - it still seems to work, though
+Annoying! Easy to fix, though - just force the JVM to use IP4:
+
+```
+-Djava.net.preferIPv4Stack=true
+```
+Thats not going to suit everyone, though. If someone else has a better way to fix this, let me know...
 
 
 ## License
