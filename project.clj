@@ -1,4 +1,4 @@
-(defproject leader-guarantee "0.1.0"
+(defproject leader-guarantee "0.2.0"
   :description "Determine and guarantee a single leader node across a cluster"
   :url "https://github.com/bbbates/leader-guarantee"
   :license {:name "Eclipse Public License"
