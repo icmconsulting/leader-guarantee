@@ -1,4 +1,4 @@
-(defproject leader-guarantee "0.1.0-SNAPSHOT"
+(defproject leader-guarantee "0.1.0"
   :description "Determine and guarantee a single leader node across a cluster"
   :url "https://github.com/bbbates/leader-guarantee"
   :license {:name "Eclipse Public License"
@@ -6,5 +6,5 @@
   :dependencies [[org.clojure/clojure "1.5.1"]
 								 [org.jgroups/jgroups "3.4.1.Final"]
  								 [org.clojure/tools.logging "0.2.6"]]
-	:jvm-opts ["-Djava.net.preferIPv4Stack=true"]
+	:plugins [[lein-release "1.0.5"]]
 	)
