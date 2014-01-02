@@ -1,13 +1,16 @@
 # Leader Guarantee
 
-Guarantee a single "leader" not across a cluster of nodes.
-Run a function when node becomes leader. Run another one (if required) when it doesn't.
+Guarantee a single "leader" node across a cluster of nodes.
+
+Run a function when node becomes leader.
+
+See https://en.wikipedia.org/wiki/Leader_election
 
 ## Install
 In leiningen:
 
 ```
-[leader-guarantee "0.1.0"]
+[leader-guarantee "0.2.0"]
 ```
 
 In Maven:
@@ -16,7 +19,7 @@ In Maven:
 <dependency>
   <groupId>leader-guarantee</groupId>
   <artifactId>leader-guarantee</artifactId>
-  <version>0.1.0</version>
+  <version>0.2.0</version>
 </dependency>
 ```
 
